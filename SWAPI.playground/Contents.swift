@@ -1,7 +1,7 @@
 import Foundation
 /*
  Remember that the "Codable" types are String, Int, Double, Date, Data and URL.
- Because of this, we can make `films` and array of URL instead of String.
+ Because of this, we can make `films` an array of URL instead of String.
  */
 struct Person: Decodable {
     let name: String
