@@ -13,7 +13,7 @@ All data in this project is retrieved from **https://swapi.co/**. Because your p
 - How/where to talk to the server (outgoing)
 - How to understand the response (incoming)
 
-1. Visit the above URL and look at the documentation. The base URL is prominently displayed on a label. `https://swapi.co/api/`. All requests to the server will begin with that URL.
+1. Visit the above URL and look at the documentation. The base URL is prominently displayed on a label. `https://swapi.dev/`. All requests to the server will begin with that URL.
 2. The sample request has two components added to it - `people/`, the person endpoint we'll be hitting, and `1/` the "ID" for a particular person. In this case, Luke Skywalker.
 3. You have your Person endpoint, but you still need the Film endpoint. At the top-right, hit "Documentation" and then look for "Films".
 4. It has the same base URL but this time the endpoint is named `films/`. According to the documentation, the Film endpoint also takes an ID.
@@ -27,7 +27,7 @@ All data in this project is retrieved from **https://swapi.co/**. Because your p
 * Install Postman if you haven't already and open up a new request.
 
 * Paste the full URL for a Person and hit Send. If successful, Postman will print out JSON person information.
-*If you aren't getting correct info, make sure your URL is formatted correctly. `https://swapi.co/api/people/{CHARACTER_ID}`*
+*If you aren't getting correct info, make sure your URL is formatted correctly. `https://swapi.dev/api/people/{CHARACTER_ID}`*
 
 * The field "films" is an array of URL strings. Copy one of these to your clipboard and open a new tab in Postman.
 
@@ -53,7 +53,7 @@ All data in this project is retrieved from **https://swapi.co/**. Because your p
 * Below your two custom types, create a class named `SwapiService`. This class will be responsible for fetching data from SWAPI and parsing it into your models.
 
 * Since both fetches use the same base URL, add it to the top level of your SwapiService.
-`static private let baseURL = URL(string: "https://swapi.co/api/")`
+`static private let baseURL = URL(string: "https://swapi.dev/api/")`
 
 * Declare a static function "fetchPerson" that takes an id of type `Int` and a completion block.
 ```
