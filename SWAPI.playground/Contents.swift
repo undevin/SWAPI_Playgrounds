@@ -14,7 +14,7 @@ struct Film: Decodable {
 
 class SwapiService {
     
-    static private let baseURL = URL(string: "https://swapi.co/api")
+    static private let baseURL = URL(string: "https://swapi.dev/api")
     static let peopleEndpoint = "people"
     
     static func fetchPerson(id: Int, completion: @escaping (Person?) -> Void) {

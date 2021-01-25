@@ -9,7 +9,7 @@ In the finished playground, they will perform a fetch for a Person and then a se
 * Look at a sample response (JSON)
 * Determine how to structure your model
 
-All data in this project is retrieved from **https://swapi.co/**. Because your project depends entirely on communication to the server, you need to determine two things:
+All data in this project is retrieved from **https://swapi.dev/**. Because your project depends entirely on communication to the server, you need to determine two things:
 - How/where to talk to the server (outgoing)
 - How to understand the response (incoming)
 
